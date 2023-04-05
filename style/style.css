@@ -288,7 +288,13 @@ textarea
     font-size: 16px;
 }
 @media screen and (max-width:768px) {
-   #banner
+    body
+    {
+        
+    width: 100vw;
+    overflow-x: hidden;
+    }
+   #banner h1
    {
     text-align: center;
     font-size: 40px;
@@ -299,6 +305,7 @@ textarea
    {
     height: auto;
     padding-bottom: 25px;
+    text-align: center;
    }
    .service-card
    {
