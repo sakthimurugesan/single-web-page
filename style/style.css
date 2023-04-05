@@ -288,7 +288,7 @@ textarea
     color: white;
     font-size: 16px;
 }
-@media screen  and (max-width:768px)  {
+@media screen  and (min-width:768px) and (max-width:1024px) {
     body
     {
         
@@ -323,13 +323,22 @@ textarea
    }
    .service-box
    {
-    width:250px;
-    height: 300px;
+    width:300px;
+    height: 350px;
    }
    .service-box img
    {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
+   }
+   .service-box h3
+   {
+    font-size: 20px;
+    margin-top: 25px;
+   }
+   .service-box p
+   {
+    font-size: 17px;
    }
    #pricing
    {
@@ -347,12 +356,12 @@ textarea
    .pricing-box-card
    {
     flex-direction: column;
+    flex-wrap: wrap;
    }
    .pricing-box
    {
-    width: 250px;
-    height: 350px;
-    flex-wrap: wrap;
+    width: 350px;
+    height: 450px;
    }
    .pricing-box ul{
     margin-top: 30px;
@@ -361,9 +370,129 @@ textarea
 {
     color: black;
     text-align: left;
-    text-indent: 55px;
-    line-height: 25px;
-    font-size: 16px;
+    text-indent: 95px;
+    line-height: 35px;
+    font-size: 18px;
+}
+.pricing-box-top
+
+{
+
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    text-align: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    
+}
+:is(.pricing-box-top) span
+{
+    font-size: 26px;
+    font-weight: bolder;
+}
+:is(.pricing-box-top) p
+{
+    font-size: 18px;
+}
+.pricing-box-top h2
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #33333342;
+    display: block;
+    font-size: 20px;
+}
+}
+
+@media screen  and (min-width:375px) and (max-width:768px) {
+    body
+    {
+        
+    width: 100vw;
+    overflow-x: hidden;
+    }
+   #banner h1
+   {
+    text-align: center;
+    font-size: 40px;
+   }
+ 
+  
+   #service
+   {
+    height: auto;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: red;
+   }
+   .service-card
+   {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   }
+   .service-content-box
+   {
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .service-box
+   {
+    width:300px;
+    height: 350px;
+   }
+   .service-box img
+   {
+    width: 100px;
+    height: 100px;
+   }
+   .service-box h3
+   {
+    font-size: 20px;
+    margin-top: 25px;
+   }
+   .service-box p
+   {
+    font-size: 17px;
+   }
+   #pricing
+   {
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+   }
+   .pricing-container{
+    text-align: center;
+    line-height: 20px;
+   }
+   .pricing-box-card
+   {
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .pricing-box
+   {
+    width: 350px;
+    height: 450px;
+   }
+   .pricing-box ul{
+    margin-top: 30px;
+}
+.pricing-box ul li
+{
+    color: black;
+    text-align: left;
+    text-indent: 95px;
+    line-height: 35px;
+    font-size: 18px;
 }
 .pricing-box-top
 
