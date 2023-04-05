@@ -334,6 +334,9 @@ textarea
    #pricing
    {
     height: auto;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 25px;
    }
    .pricing-container{
