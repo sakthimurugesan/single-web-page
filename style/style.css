@@ -157,6 +157,7 @@ background-color: #484848;
     background-color: white;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     transition: 0.4s all linear;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -330,6 +331,64 @@ textarea
     width: 75px;
     height: 75px;
    }
+   #pricing
+   {
+    height: auto;
+    padding-bottom: 25px;
+   }
+   .pricing-container{
+    text-align: center;
+    line-height: 20px;
+   }
+   .pricing-box-card
+   {
+    flex-direction: column;
+   }
+   .pricing-box
+   {
+    width: 250px;
+    height: 350px;
+   }
+   .pricing-box ul{
+    margin-top: 30px;
+}
+.pricing-box ul li
+{
+    color: black;
+    text-align: left;
+    text-indent: 55px;
+    line-height: 25px;
+    font-size: 16px;
+}
+.pricing-box-top
 
-   
+{
+
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    text-align: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+
+    
+}
+:is(.pricing-box-top) span
+{
+    font-size: 26px;
+    font-weight: bolder;
+}
+:is(.pricing-box-top) p
+{
+    font-size: 18px;
+}
+.pricing-box-top h2
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #33333342;
+    display: block;
+    font-size: 20px;
+}
 }
