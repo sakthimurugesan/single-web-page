@@ -348,6 +348,7 @@ textarea
    {
     width: 250px;
     height: 350px;
+    flex-wrap: wrap;
    }
    .pricing-box ul{
     margin-top: 30px;
