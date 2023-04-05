@@ -457,12 +457,12 @@ textarea {
 
     .service-box {
         width: 300px;
-        height: 350px;
+        height: 330px;
     }
 
     .service-box img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .service-box h3 {
