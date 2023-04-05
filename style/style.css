@@ -107,6 +107,7 @@ li a
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 20px;
     margin-top: 20px;
     
@@ -178,6 +179,7 @@ background-color: #484848;
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap:40px;
     margin-top: 30px;
     box-sizing: border-box;
@@ -323,13 +325,22 @@ textarea
    }
    .service-box
    {
-    width:250px;
-    height: 300px;
+    width:300px;
+    height: 350px;
    }
    .service-box img
    {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
+   }
+   .service-box h3
+   {
+    font-size: 22px;
+    margin-top: 25px;
+   }
+   .service-box p
+   {
+    font-size: 17px;
    }
    #pricing
    {
@@ -344,14 +355,20 @@ textarea
     text-align: center;
     line-height: 20px;
    }
+   .pricing-container p
+   {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+   }
    .pricing-box-card
    {
     flex-direction: column;
    }
    .pricing-box
    {
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     flex-wrap: wrap;
    }
    .pricing-box ul{
@@ -361,9 +378,9 @@ textarea
 {
     color: black;
     text-align: left;
-    text-indent: 50px;
-    line-height: 25px;
-    font-size: 16px;
+    text-indent: 85px;
+    line-height: 35px;
+    font-size: 20px;
 }
 .pricing-box-top
 
@@ -386,7 +403,7 @@ textarea
 }
 :is(.pricing-box-top) p
 {
-    font-size: 18px;
+    font-size: 20px;
 }
 .pricing-box-top h2
 {
@@ -394,6 +411,6 @@ textarea
     padding-bottom:20px;
     background-color: #33333342;
     display: block;
-    font-size: 20px;
+    font-size: 26px;
 }
 }
