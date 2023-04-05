@@ -289,11 +289,13 @@ textarea
     font-size: 16px;
 }
 @media screen  and (min-width:768px) and (max-width:1024px) {
+    html,body
+    {
+        overflow-x: hidden;
+    }
     body
     {
-        
-    width: 100vw;
-    overflow-x: hidden;
+        position: relative;
     }
    #banner h1
    {
@@ -407,14 +409,17 @@ textarea
 }
 }
 
-@media screen  and (min-width:320px) and (max-width:768px) {
+@media screen  and (min-width:320px) and (max-width:768px) 
+{
+    html,body
+    {
+        overflow-x: hidden;
+    }
     body
     {
-        
-    width: 100vw;
-    overflow-x: hidden;
+        position: relative;
     }
-   #banner h1
+    #banner h1
    {
     text-align: center;
     font-size: 40px;
@@ -525,4 +530,7 @@ textarea
     display: block;
     font-size: 20px;
 }
-}
+
+
+    }
+   
