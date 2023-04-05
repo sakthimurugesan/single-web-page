@@ -21,19 +21,35 @@ nav{
 
 
 }
+.nav-li
+{
+    
+    box-sizing: border-box;
+}
 .nav-li li
 {
     display: inline;
+    height: 100%;
     margin-left: 35px;
     font-size: 20px;
-    padding: 0px;
     
 }
 li a
 {
     text-decoration: none;
     color: black;
-    display: inline-block;
+    display: inline;
+    height: 100%;
+}
+.nav-li li:hover
+{
+    
+    box-sizing: border-box;
+    background-color: rgba(11, 236, 236, 0.485);
+    padding: 25px 5px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    
 }
 #login-btn
 {
@@ -130,7 +146,7 @@ background-color: #484848;
     align-items: center;
     flex-direction: column;
     color: white;
-    margin-top: 40px;
+    margin-top: 0px;
     box-sizing: border-box;
 }
 .pricing-container h1
@@ -168,8 +184,12 @@ background-color: #484848;
     display: flex;
     flex-direction: row;
     gap:40px;
-    margin-top: 20px;
+    margin-top: 30px;
     box-sizing: border-box;
+}
+.pricing-container  p
+{
+    margin-top: 30px;
 }
 .pricing-box-top
 
