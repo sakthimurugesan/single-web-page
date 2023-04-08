@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <nav>
-      <img src="" alt="" />
-      <ul class="nav-li">
-        <li><a href="#">Home</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div>
-        <button id="login-btn">Login</button>
+    <nav class="navbar">
+      <div class="logo">
+        <H2>LOGO</H2>
+      </div>
+      <a href="#" class="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="login-btn" id="btn-one">LOGIN</button></li>
+        </ul>
+      </div>
+      <div class="login-div active">
+        <button id="btn-2" class="login-btn">LOGIN</button>
       </div>
     </nav>
+    
     <section id="banner">
       <h1>NEON COMPUTER SOLUTIONS</h1>
     </section>
@@ -159,5 +170,6 @@
         
       </form>
     </section>
+    <script src="./script/app.js"></script>
   </body>
 </html>

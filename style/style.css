@@ -5,48 +5,71 @@
     scroll-behavior: smooth;
 }
 
-nav {
-    position: sticky;
-    top: 0px;
+.navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: #333;
+    color: white;
     align-items: center;
+    justify-content: space-between;
     height: 70px;
-    width: 100%;
-    padding-right: 25px;
-    background-color: rgb(0, 139, 139);
-    z-index: 2;
+    position: sticky;
 }
 
-.nav-li {
-
-    box-sizing: border-box;
-}
-
-.nav-li li {
-    display: inline;
+.navbar-links ul {
+    display: flex;
     height: 100%;
-    margin-left: 35px;
-    font-size: 20px;
-    transition: all 0.5s linear;
-
-
-
 }
 
-li a {
+.navbar-links ul li {
+    height: 100%;
+    list-style: none;
+}
+
+.navbar-links ul li a {
+    display: block;
+    padding: 24px 1rem;
+    color: white;
+    font-size: 20px;
     text-decoration: none;
-    color: black;
-    height: 100%;
 }
 
-#login-btn {
-    width: 90px;
-    height: 40px;
+#btn-one {
+    margin-left: -2000px;
+}
+
+.navbar-links ul li a:hover {
+    background-color: red;
+}
+
+.btn {
+    display: none;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+    flex-direction: column;
+    position: absolute;
+    right: 25px;
+}
+
+.btn span {
+    width: 90%;
+    height: 5px;
+    background-color: white;
     border-radius: 5px;
-    border: none;
-    font-size: 20px;
+}
+
+.login-div {
+    display: flex;
+    margin-right: 25px;
+}
+
+.login-btn {
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 #banner, #service, #pricing, #products, #contact {
@@ -303,6 +326,57 @@ textarea {
         position: relative;
     }
 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        padding: 32px;
+    }
+
+    .navbar.active {
+        height: 100vh;
+        z-index: 99;
+    }
+
+    .navbar-links ul {
+        display: none;
+    }
+
+    .navbar-links.active {
+        width: 100%;
+    }
+
+    .navbar-links.active ul {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active ul li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar-links.active ul li:first-child {
+        border-top: 1px solid #ffff;
+    }
+
+    #btn-one {
+        margin: 10px;
+    }
+
+    #btn-2 {
+        display: none;
+    }
+
+    .btn {
+        display: flex;
+        top: 25px;
+    }
+
     #banner h1 {
         text-align: center;
         font-size: 40px;
@@ -411,10 +485,10 @@ textarea {
         display: block;
         font-size: 20px;
     }
-    nav
-    {
+
+    nav {
         position: fixed;
-        top:0px;
+        top: 0px;
     }
 }
 
@@ -423,10 +497,60 @@ textarea {
         overflow-x: hidden;
     }
 
-    nav
-    {
+    nav {
         position: fixed;
-        top:0px;
+        top: 0px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        padding: 32px;
+    }
+
+    .navbar.active {
+        height: 100vh;
+        z-index: 99;
+    }
+
+    .navbar-links ul {
+        display: none;
+    }
+
+    .navbar-links.active {
+        width: 100%;
+    }
+
+    .navbar-links.active ul {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active ul li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar-links.active ul li:first-child {
+        border-top: 1px solid #ffff;
+    }
+
+    #btn-one {
+        margin: 10px;
+    }
+
+    #btn-2 {
+        display: none;
+    }
+
+    .btn {
+        display: flex;
+        top: 25px;
     }
 
     body {
@@ -551,24 +675,24 @@ textarea {
         display: block;
         font-size: 20px;
     }
-    #contact form
-    {
+
+    #contact form {
         width: 90%;
     }
-    #contact form textarea
-    {
+
+    #contact form textarea {
         margin-top: -20px;
     }
-    .row
-    {
+
+    .row {
         height: 60px;
         flex-direction: column;
         align-items: flex-start;
         row-gap: 10px;
-        margin-top:10px;
+        margin-top: 10px;
     }
-    .row input
-    {
+
+    .row input {
         height: 30px;
     }
 
