@@ -40,7 +40,14 @@
 .navbar-links ul li a:hover {
     background-color: red;
 }
-
+.navbar.active
+{
+    transition: all 0.3s linear;
+}
+.navbar-links.active
+{
+    transition: all 0.3s linear;
+}
 .btn {
     display: none;
     height: 30px;
@@ -327,8 +334,11 @@ textarea {
     }
 
     .navbar {
+        position: fixed;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+        z-index: 98;
     }
 
     .logo {
@@ -503,8 +513,11 @@ textarea {
     }
 
     .navbar {
+        position: fixed;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+        z-index: 98;
     }
 
     .logo {
